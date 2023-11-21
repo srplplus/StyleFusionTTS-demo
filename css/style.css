@@ -142,7 +142,7 @@ body {
   padding:10px;
 }
 .c10783{
-  font-size:14px;
+  font-size:13px;
 }
 .c11565{
   color:black;
@@ -150,8 +150,14 @@ body {
   height:495.48779296875px;
 }
 .c13722{
+  font-size:12px;
   padding:10px;
   text-align:center;
+}
+.c13723{
+  font-size:13px;
+  padding:10px;
+  text-align:left;
 }
 .c14605{
   padding:10px;
