@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+#ihys{
+  background-color:#f3f3f3;
+}
+#iu2qo{
+  width:60%;
+}
+#ig3zl{
+  text-align:center;
+  width:35%;
+}
+#i1i4x{
+  text-align:center;
+  width:30%;
+}
+#iskki{
+  width:30%;
+}
+#ir5cf{
+  width:45px;
+  en:1;
+  vertical-align:middle;
+}
+#ijsyr{
+  width:35%;
+}
+#irjm1{
+  width:30%;
+  text-align:left;
+  font-size:13px;
+  padding:8px;
+}
+.htmlpage-row{
+  display:table;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  width:100%;
+}
+.htmlpage-cell{
+  width:8%;
+  display:table-cell;
+  height:75px;
+}
+.c2066{
+  padding:48px;
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:38px;
+  font-weight:700;
+}
+.c4939{
+  padding:16px;
+  text-align:center;
+  font-size:16px;
+}
+.c36113{
+  padding:10px;
+  font-size:12px;
+  text-align:center;
+}
+.c37062{
+  padding:10px;
+  font-size:18px;
+  text-align:left;
+}
+.c1169{
+  background-color:#ffffff;
+  text-align:left;
+  width:90px;
+}
+.c1693{
+  padding:10px;
+}
+.c1770{
+  border:0px;
+  outline:0px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(85, 85, 85);
+  font-size:21px;
+}
+.c3399{
+  color:black;
+  width:383px;
+  height:394.8245849609375px;
+  text-align:center;
+}
+.c3079{
+  text-align:center;
+  width:30%;
+}
+.c5200{
+  font-size:13px;
+  text-align:left;
+  color:#000000;
+  padding:8px;
+}
+.c5281{
+  padding:8px;
+  font-size:13px;
+  text-align:left;
+}
+.c5362{
+  padding:0px;
+  text-align:left;
+  font-size:14px;
+}
+.c5510{
+  color:rgb(12, 13, 14);
+  font-family:STIXGeneral-Regular;
+  font-size:16.65px;
+  text-wrap:nowrap;
+}
+.c5630{
+  color:rgb(12, 13, 14);
+  font-family:-apple-system, "system-ui", "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+  font-size:var(--fs-headline1);
+  font-weight:inherit;
+}
+.c6075{
+  font-family:STIXGeneral-Regular;
+  font-size:18.3px;
+  text-wrap:nowrap;
+}
+.c7160{
+  color:black;
+  width:424px;
+  height:376.36944580078125px;
+}
+.c7856{
+  padding:10px;
+  font-size:17px;
+  font-weight:600;
+}
+.c10696{
+  padding:10px;
+}
+.c10783{
+  font-size:14px;
+}
+.c11565{
+  color:black;
+  width:387px;
+  height:495.48779296875px;
+}
+.c13722{
+  padding:10px;
+  text-align:center;
+}
+.c14605{
+  padding:10px;
+}
+@media (max-width: 768px){
+  .htmlpage-cell{
+    width:100%;
+    display:block;
+  }
+}
+table{
+   	width:70%;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);/* 阴影 */
+    border-collapse:collapse;/* 取消表格边框 */
+    /* letter-spacing:1px;文字缩进 */
+}
+table,th,tr,td{ 
+    border-bottom:1px solid #dedede;/* 表格横线 */
+    padding:5px;
+    text-align: center;
+}
