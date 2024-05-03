@@ -21,6 +21,10 @@ body {
 #iskki{
   width:30%;
 }
+#abcde{
+  text-align:center;
+  width:20%;
+}
 #ir5cf{
   width:45px;
   en:1;
@@ -91,6 +95,14 @@ body {
   height:394.8245849609375px;
   text-align:center;
 }
+.c9000{
+  color:black;
+  width:50%;
+}
+.c9001{
+  color:black;
+  width:35%;
+}
 .c3079{
   text-align:center;
   width:30%;
@@ -98,6 +110,12 @@ body {
 .c5200{
   font-size:13px;
   text-align:left;
+  color:#000000;
+  padding:8px;
+}
+.c5201{
+  font-size:13px;
+  text-align:middle;
   color:#000000;
   padding:8px;
 }
@@ -179,3 +197,12 @@ table,th,tr,td{
     padding:5px;
     text-align: center;
 }
+
+.scrollable-table {
+  overflow-x: auto;   /* Enable horizontal scrolling within the div */
+  overflow-y: hidden; /* Hide vertical scrolling */
+  width: 100%;        /* Fit the container to the width of its parent */
+  max-width: 1280px;    /* Optional: ensure it doesn’t stretch beyond the viewable area */
+  border: 1px solid #ccc; /* Visual clarity */
+}
+

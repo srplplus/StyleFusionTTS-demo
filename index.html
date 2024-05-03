@@ -8,6 +8,7 @@
   <script type="text/javascript" src="js/script.js"></script>
 </head>
 
+
 <body id="ihys">
   <div class="htmlpage-row">
     <div class="htmlpage-cell">
@@ -15,15 +16,9 @@
         <div class="htmlpage-cell" id="iez6">
         </div>
         <div id="iml7" class="htmlpage-cell c1169">
-          <div id="idac" class="c2066">Optimizing Feature Fusion for Improved Few-Shot Speaker Adaptation in
-            Text-to-Speech Synthesis
-          </div>
-          <div id="ik4q9" class="c4939">Zhiyong Chen*, Zhiqi Ai*, Youxuan Ma, Xinnuo Li, Shugong Xu**
+          <div id="idac" class="c2066">StyleFusion TTS: Multimodal Style-control and Enhanced Feature Fusion for Zero-shot Text-to-speech Synthesis
           </div>
           <div class="htmlpage-row">
-          </div>
-          <div id="iow46rc" class="c36113">*These authors contributed equally to this work, **Correspondence:
-            Shugong@shu.edu.cn
           </div>
           <div class="htmlpage-row">
             <div class="htmlpage-cell">
@@ -34,7 +29,7 @@
                 </h2>
               </div>
               <div id="itz2q" class="c10696">
-                <span id="iyb5g" class="c10783">In the era of advanced Text-to-Speech (TTS) systems capable of generating high-fidelity, human-like speech, voice cloning (VC) stands out as an important subtask. A primary challenge in VC is maintaining speech quality and speaker similarity with limited training data for a specific speaker. Existing VC systems often rely on basic combinations of embedded speaker vectors, leading to suboptimal performance. To overcome this, we introduce the Two-branch Speaker Control Module (TSCM), an innovative voice cloning module engineered to precisely capture the speaker identity of a target speaker. Our method uses an advanced fusion of local-level features from a Gated Convolutional Network (GCN) and utterance-level features from a Gated Recurrent Unit (GRU) to enhance speaker control. We demonstrate the effectiveness of TSCM by integrating it into state-of-the-art TTS systems like FastSpeech 2 and VITS, significantly optimizing their performance. Experimental results show that TSCM based TTS (TSCM-TTS) facilitates accurate voice customization for a target speaker with minimal data and minimizes computational resources through few-shot fine-tuning of pre-trained multi-speaker models. Furthermore, TSCM-TTS demonstrates superior performance in zero-shot scenarios compared to baseline and state-of-the-art systems. Both subjective and objective evaluations confirm the superiority of our system over existing methodologies.</span>
+                <span id="iyb5g" class="c10783">We introduce StyleFusion-TTS, a prompt and/or audio referenced, style- and speaker-controllable, zero-shot text-to-speech (TTS) synthesis system designed to enhance the editability and naturalness of current research literature. We propose a general front-end encoder as a compact and effective module to utilize multimodal inputs—including text prompts, audio references, and speaker timbre references—in a fully zero-shot manner and produce disentangled style and speaker control embeddings. Our novel approach also leverages a hierarchical conformer structure for the fusion of style and speaker control embeddings, aiming to achieve optimal feature fusion within the current advanced TTS architecture. StyleFusion-TTS is evaluated through multiple metrics, both subjectively and objectively. The system shows promising performance across our evaluations, suggesting its potential to contribute to the advancement of the field of zero-shot text-to-speech synthesis.</span>
                 <br/>
               </div>
               <div id="i7oh2" class="c1693">
@@ -42,238 +37,357 @@
                 </h2>
               </div>
               <div class="htmlpage-row">
-                <div class="htmlpage-cell c3079">
-                  <img src="imgs/WechatIMG988.jpg" class="c3399"/>
-                </div>
+                <!-- First image in its own row -->
                 <div class="htmlpage-cell" id="ig3zl">
-                  <img src="imgs/t2.png" class="c7160"/>
-                </div>
-                <div class="htmlpage-cell" id="i1i4x">
-                  <img src="imgs/t3.png" class="c11565"/>
+                  <img src="imgs/1.png" class="c9000"/>
                 </div>
               </div>
               <div class="htmlpage-row">
-                <div class="htmlpage-cell" id="iskki">
-                  <div id="ifx57" class="c5200">(a) The details of the TSCM block are shown in the figure, where the 
-                    <img src="data:image/png;base64,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" alt="" id="ir5cf"/>is used for constraining the hidden-state by introducing both the recurrent and a convolution branch. The addition and multiplication operations are represented by 
-                    <span id="ibrdf" class="c5510">⨁</span> and 
-                    <span id="im8lh" class="c5630"><span id="ibfox" class="c6075">⨂ </span>respectively.</span>
-                  </div>
-                </div>
-                <div class="htmlpage-cell" id="ijsyr">
-                  <div id="i4chr" class="c5281">(b) Integration of our TSCM method into the FastSpeech 2 architecture.
-                    The TSCM-TTS system utilizes a mel-style encoder to extract the latent speaker vector from the
-                    reference mel spectrogram of the target speaker, and the TSCM-Transformer (TSCT) serving as an
-                    advanced control for speaker identity.
-                  </div>
-                </div>
-                <div class="htmlpage-cell" id="irjm1">
-                  <div id="imh34" class="c5362">(c) Overview of our proposed TSCM-VITS system in training procedure.
-                  </div>
+                <!-- Additional content continues as before -->
+                <div class="htmlpage-cell" id="ig3zl">
+                  <div id="ifx57" class="c5201">Model overview for StyleFusion-TTS</div>
                 </div>
               </div>
+              <div class="htmlpage-row">
+                <!-- Second image in the next row -->
+                <div class="htmlpage-cell" id="ig3zl">
+                  <img src="imgs/2.png" class="c9001"/>
+                </div>
+              </div>
+              <div class="htmlpage-row">
+                <!-- Additional content continues as before -->
+                <div class="htmlpage-cell" id="ig3zl">
+                  <div id="i4chr" class="c5201">Front-end general style fusion encoder (GSF-enc) for speaker and style representation and disentanglement</div>
+                </div>
+              </div>
+              
               <div class="c1693">
                 <h2 class="c1770">Demo
                 </h2>
               </div>
-              <div id="i1swk" class="c7856">1. Voice Cloning
+              <div id="i1swk" class="c7856">1. Emotional style control
               </div>
-              <div>
+              
+              <div class="scrollable-table">
                 <table class="htmlpage-row">
                   <thead>
                     <tr>
-                      <td class="htmlpage-ceil c13722">
-                        </th>
-                      <td class="htmlpage-ceil c13722">Sample A</td>
-                      <td class="htmlpage-ceil c13722">Sample B</td>
-                      <td class="htmlpage-ceil c13722">Sample C</td>
+                      <td class="htmlpage-ceil c13722"></td>
+                      <td class="htmlpage-ceil c13722">Sample 1</td>
+                      <td class="htmlpage-ceil c13722">Sample 2</td>
+                      <td class="htmlpage-ceil c13722">Sample 3</td>
+                      <td class="htmlpage-ceil c13722">Sample 4</td>
+                      <td class="htmlpage-ceil c13722">Sample 5</td>
+                      <td class="htmlpage-ceil c13722">Sample 6</td>
+                      <td class="htmlpage-ceil c13722">Sample 7</td>
+                      <td class="htmlpage-ceil c13722">Sample 8</td>
+                      <td class="htmlpage-ceil c13722">Sample 9</td>
+                      <td class="htmlpage-ceil c13722">Sample 10</td>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td class="htmlpage-ceil c13722">Utterance for enroll</th>
-                      <td><audio controls>
-                          <source src="audios/A1_ref.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/A2_ref.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/A3_ref.wav" type="audio/mpeg" />
-                        </audio></td>
-                    </tr>
-                  </tbody>
                   <thead>
                     <tr>
-                      <td class="htmlpage-ceil c13722">Target Text</td>
-                      <td class="htmlpage-ceil c13723">He hears a rushing sound like that of the paddles of a distant
-                        steamer striking and tearing the water; he sees the terns flocking, and the surface of the water
-                        broken again and again by bleak leaping high into the air.</td>
-                      <td class="htmlpage-ceil c13723">So he turned his horse round, and brought the false bride back to
-                        her home, and said, 'This is not the right bride; let the other sister try and put on the
-                        slipper.' Then she went into the room and got her foot into the shoe, all but the heel, which
-                        was too large.</td>
-                      <td class="htmlpage-ceil c13723">It is not like a single large animal darting forward with rapidly
-                        twisting tail, and leaving a wake and waves behind it; but a general effervescence that makes
-                        the depths gleam with millions of scales.</td>
+                      <td class="htmlpage-ceil c13722">Style Prompt</td>
+                      <td class="htmlpage-ceil c13722">(Anger)A man speaks with a tone of extreme anger.</td>
+                      <td class="htmlpage-ceil c13722">(Surprised)A man says with a slightly surprised tone</td>
+                      <td class="htmlpage-ceil c13722">(Terror)There’s an intense terror in the man’s tone.</td>
+                      <td class="htmlpage-ceil c13722">(Angry)A man says with a slightly angry tone.</td>
+                      <td class="htmlpage-ceil c13722">(Sad)A man says with a moderately sad tone.</td>
+                      <td class="htmlpage-ceil c13722">(Disgusted)A woman says with an extremely disgusted tone.</td>
+                      <td class="htmlpage-ceil c13722">(Surprise)A woman speaks with a tone of extreme surprise.</td>
+                      <td class="htmlpage-ceil c13722">(Sad)A woman speaks with a tone of extreme sadness.</td>
+                      <td class="htmlpage-ceil c13722">(Angry)Her tone reflects a tempered but still angry expression.</td>
+                      <td class="htmlpage-ceil c13722">(Happy)A woman says with a moderately happy tone.</td>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Content Text</td>
+                      <td class="htmlpage-ceil c13722">Its yellow bristles, rather a mane than a head of hair, covered and concealed a lofty brow, evidently made to contain thought.</td>
+                      <td class="htmlpage-ceil c13722">I, whom the Kshatriyas know as Kerim Shah, a prince from Iranistan, am no greater a masquerader than most men.</td>
+                      <td class="htmlpage-ceil c13722">"Why don’t you move the pony?"</td>
+                      <td class="htmlpage-ceil c13722">"My name is Phoebe Pyncheon." said the girl, with a manner of some reserve.</td>
+                      <td class="htmlpage-ceil c13722">The patience of the meek Theodosius was provoked; and he dissolved in anger this episcopal tumult.</td>
+                      <td class="htmlpage-ceil c13722">The camp fire was burning brightly when the first guard, having completed its tour of duty, came galloping in.</td>
+                      <td class="htmlpage-ceil c13722">Nature had been prodigal of her kindness to Gwynplaine.</td>
+                      <td class="htmlpage-ceil c13722">To teach Cosette to read, and to let her play, this constituted nearly the whole of Jean Valjean’s existence.</td>
+                      <td class="htmlpage-ceil c13722">What an instrument is the human voice!</td>
+                      <td class="htmlpage-ceil c13722">But things haven't change yet.</td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">GT(Read by real speaker)</th>
-                      <td><audio controls>
-                          <source src="audios/GT_A1.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/GT_A2.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/GT_A3.wav" type="audio/mpeg" />
-                        </audio></td>
+                      <td class="htmlpage-ceil c13722">Emotivoice</td>
+                      <td><audio controls><source src="audios_new/1_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/3_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/4_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/5_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/7_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/9_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/10_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/12_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/13_emotivoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/16_emotivoice.wav" type="audio/mpeg" /></audio></td>
+
                     </tr>
                   </tbody>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">YourTTS_Control-ZS(baseline)</th>
-                      <td><audio controls>
-                          <source src="audios/YourTTS_Control_ZS_A1.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/YourTTS_Control_ZS_A2.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/YourTTS_Control_ZS_A3.wav" type="audio/mpeg" />
-                        </audio></td>
+                      <td class="htmlpage-ceil c13722">Openvoice</td>
+                      <td><audio controls><source src="audios_new/1_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/3_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/4_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/5_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/7_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/9_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/10_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/12_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/13_openvoice.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/16_openvoice.wav" type="audio/mpeg" /></audio></td>
                     </tr>
                   </tbody>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">YourTTS_Control-FS(baseline)</th>
-                      <td><audio controls>
-                          <source src="audios/YourTTS_Control_FS_A1.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/YourTTS_Control_FS_A2.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/YourTTS_Control_FS_A3.wav" type="audio/mpeg" />
-                        </audio></td>
+                      <td class="htmlpage-ceil c13722">MMStyleSpeech</td>
+                      <td><audio controls><source src="audios_new/1_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/3_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/4_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/5_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/7_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/9_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/10_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/12_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/13_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/16_MMStyleSpeech.wav" type="audio/mpeg" /></audio></td>
                     </tr>
                   </tbody>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">TSCM-VITS-ZS(ours)</th>
-                      <td><audio controls>
-                          <source src="audios/TSCM_VITS_ZS_A1.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/TSCM_VITS_ZS_A2.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/TSCM_VITS_ZS_A3.wav" type="audio/mpeg" />
-                        </audio></td>
+                      <td class="htmlpage-ceil c13722">MMTTS</td>
+                      <td><audio controls><source src="audios_new/1_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/3_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/4_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/5_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/7_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/9_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/10_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/12_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/13_MMTTS.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/16_MMTTS.wav" type="audio/mpeg" /></audio></td>
                     </tr>
                   </tbody>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">TSCM-VITS-FS(ours)</th>
-                      <td><audio controls>
-                          <source src="audios/TSCM_VITS_FS_A1.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/TSCM_VITS_FS_A2.wav" type="audio/mpeg" />
-                        </audio></td>
-                      <td><audio controls>
-                          <source src="audios/TSCM_VITS_FS_A3.wav" type="audio/mpeg" />
-                        </audio></td>
+                      <td class="htmlpage-ceil c13722">StyleFusion-TTS control by style prompt reference</td>
+                      <td><audio controls><source src="audios_new/1_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/3_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/4_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/5_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/7_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/9_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/10_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/12_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/13_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/16_ourTsr.wav" type="audio/mpeg" /></audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">StyleFusion-TTS control by style audio reference</td>
+                      <td><audio controls><source src="audios_new/1_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/3_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/4_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/5_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/7_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/9_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/10_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/12_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/13_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/16_ourAsr.wav" type="audio/mpeg" /></audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">StyleFusion-TTS control by prompt and audio reference</td>
+                      <td><audio controls><source src="audios_new/1_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/3_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/4_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/5_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/7_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/9_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/10_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/12_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/13_ourTAsr.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new/16_ourTAsr.wav" type="audio/mpeg" /></audio></td>
                     </tr>
                   </tbody>
                 </table>
+                
               </div>
               <div class="c7856"></div>
-              <div class="c7856">2. Performance Comparative Metrics of Our Proposed Method with SOTA VC Models
-                (Zero-shot)
+              <div class="c7856">2. Comparison of our proposed method with SOTA zero-shot TTS/voice cloning models
               </div>
-              <div>
+              <div class="scrollable-table">
                 <table class="htmlpage-row">
                   <thead>
                     <tr>
                       <td class="htmlpage-ceil c13722">
                         </th>
-                      <td class="htmlpage-ceil c13722">Sample A</th>
-                      <td class="htmlpage-ceil c13722">Sample B</th>
-                      <td class="htmlpage-ceil c13722">Sample C</th>
+                      <td class="htmlpage-ceil c13722">Sample 1</th>
+                      <td class="htmlpage-ceil c13722">Sample 2</th>
+                      <td class="htmlpage-ceil c13722">Sample 3</th>
+                      <td class="htmlpage-ceil c13722">Sample 4</th>
+                      <td class="htmlpage-ceil c13722">Sample 5</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">Utterance for enroll</th>
+                      <td class="htmlpage-ceil c13722">Speakers timbre audio for enroll</th>
                       <td><audio controls>
-                          <source src="audios/A1_ref.wav" type="audio/mpeg" />
+                          <source src="audios_new1/21_ref.wav" type="audio/mpeg" />
                         </audio></td>
                       <td><audio controls>
-                          <source src="audios/A2_ref.wav" type="audio/mpeg" />
+                          <source src="audios_new1/20_ref.wav" type="audio/mpeg" />
                         </audio></td>
                       <td><audio controls>
-                          <source src="audios/A3_ref.wav" type="audio/mpeg" />
+                          <source src="audios_new1/19_ref.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/18_ref.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/17_ref.wav" type="audio/mpeg" />
                         </audio></td>
                     </tr>
                   </tbody>
                   <thead>
                     <tr>
-                      <td class="htmlpage-ceil c13722">Target Text</td>
-                      <td class="htmlpage-ceil c13723">He hears a rushing sound like that of the paddles of a distant
-                        steamer striking and tearing the water; he sees the terns flocking, and the surface of the water
-                        broken again and again by bleak leaping high into the air.</td>
-                      <td class="htmlpage-ceil c13723">So he turned his horse round, and brought the false bride back to
-                        her home, and said, 'This is not the right bride; let the other sister try and put on the
-                        slipper.' Then she went into the room and got her foot into the shoe, all but the heel, which
-                        was too large.</td>
-                      <td class="htmlpage-ceil c13723">It is not like a single large animal darting forward with rapidly
-                        twisting tail, and leaving a wake and waves behind it; but a general effervescence that makes
-                        the depths gleam with millions of scales.</td>
+                      <td class="htmlpage-ceil c13722">Content Text</td>
+                      <td class="htmlpage-ceil c13723">So Tom saw night as it were broad daylight.</td>
+                      <td class="htmlpage-ceil c13723">These words behind the ears is nonsense.</td>
+                      <td class="htmlpage-ceil c13723">Andy what's the gyre and to gimble.</td>
+                      <td class="htmlpage-ceil c13723">On the twenty second of last march.</td>
+                      <td class="htmlpage-ceil c13723">Born once every one hundred years, dies in flames!</td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">VALLEX</th>
+                      <td class="htmlpage-ceil c13722">VALLE</th>
                       <td><audio controls>
-                          <source src="audios/VALLEX_ZS_A1.wav" type="audio/mpeg" />
+                          <source src="audios_new1/21_VALLE.wav" type="audio/mpeg" />
                         </audio></td>
                       <td><audio controls>
-                          <source src="audios/VALLEX_ZS_A2.wav" type="audio/mpeg" />
+                          <source src="audios_new1/20_VALLE.wav" type="audio/mpeg" />
                         </audio></td>
                       <td><audio controls>
-                          <source src="audios/VALLEX_ZS_A3.wav" type="audio/mpeg" />
+                          <source src="audios_new1/19_VALLE.wav" type="audio/mpeg" />
                         </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/18_VALLE.wav" type="audio/mpeg" />
+                      </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/17_VALLE.wav" type="audio/mpeg" />
+                      </audio></td>
                     </tr>
                   </tbody>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">XTTS</th>
+                      <td class="htmlpage-ceil c13722">Openvoice</th>
                       <td><audio controls>
-                          <source src="audios/XTTS_ZS_A1.wav" type="audio/mpeg" />
+                          <source src="audios_new1/21_openvoice.wav" type="audio/mpeg" />
                         </audio></td>
                       <td><audio controls>
-                          <source src="audios/XTTS_ZS_A2.wav" type="audio/mpeg" />
+                          <source src="audios_new1/20_openvoice.wav" type="audio/mpeg" />
                         </audio></td>
                       <td><audio controls>
-                          <source src="audios/XTTS_ZS_A3.wav" type="audio/mpeg" />
+                          <source src="audios_new1/19_openvoice.wav" type="audio/mpeg" />
                         </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/18_openvoice.wav" type="audio/mpeg" />
+                      </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/17_openvoice.wav" type="audio/mpeg" />
+                      </audio></td>
                     </tr>
                   </tbody>
                   <tbody>
                     <tr>
-                      <td class="htmlpage-ceil c13722">TSCM-VITS(ours)</th>
+                      <td class="htmlpage-ceil c13722">Hierspeech++</th>
                       <td><audio controls>
-                          <source src="audios/TSCM_VITS_ZS_A1.wav" type="audio/mpeg" />
+                          <source src="audios_new1/21_HierspeechN.wav" type="audio/mpeg" />
                         </audio></td>
                       <td><audio controls>
-                          <source src="audios/TSCM_VITS_ZS_A2.wav" type="audio/mpeg" />
+                          <source src="audios_new1/20_HierspeechN.wav" type="audio/mpeg" />
                         </audio></td>
                       <td><audio controls>
-                          <source src="audios/TSCM_VITS_ZS_A3.wav" type="audio/mpeg" />
+                          <source src="audios_new1/19_HierspeechN.wav" type="audio/mpeg" />
                         </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/18_HierspeechN.wav" type="audio/mpeg" />
+                      </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/17_HierspeechN.wav" type="audio/mpeg" />
+                      </audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">StyleFusion-TTS control by style prompt reference</th>
+                      <td><audio controls>
+                          <source src="audios_new1/21_ourTsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                          <source src="audios_new1/20_ourTsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                          <source src="audios_new1/19_ourTsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/18_ourTsr.wav" type="audio/mpeg" />
+                      </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/17_ourTsr.wav" type="audio/mpeg" />
+                      </audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">StyleFusion-TTS control by style audio reference</th>
+                      <td><audio controls>
+                          <source src="audios_new1/21_ourAsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                          <source src="audios_new1/20_ourAsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                          <source src="audios_new1/19_ourAsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/18_ourAsr.wav" type="audio/mpeg" />
+                      </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/17_ourAsr.wav" type="audio/mpeg" />
+                      </audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">StyleFusion-TTS control by style prompt and audio reference</th>
+                      <td><audio controls>
+                          <source src="audios_new1/21_ourTAsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                          <source src="audios_new1/20_ourTAsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                          <source src="audios_new1/19_ourTAsr.wav" type="audio/mpeg" />
+                        </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/18_ourTAsr.wav" type="audio/mpeg" />
+                      </audio></td>
+                      <td><audio controls>
+                        <source src="audios_new1/17_ourTAsr.wav" type="audio/mpeg" />
+                      </audio></td>
                     </tr>
                   </tbody>
                 </table>
