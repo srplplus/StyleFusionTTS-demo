@@ -225,7 +225,7 @@
                 
               </div>
               <div class="c7856"></div>
-              <div class="c7856">2. Comparison of our proposed method with SOTA zero-shot TTS/voice cloning models
+              <div class="c7856">2. Comparison of our proposed method with SOTA zero-shot TTS for speaker cloning
               </div>
               <div class="scrollable-table">
                 <table class="htmlpage-row">
@@ -392,6 +392,155 @@
                   </tbody>
                 </table>
               </div>
+
+              <!-- Table3 Start -->
+              <div id="i1swk" class="c7856">3. Style control for different emotions
+              </div>
+              
+              <div class="scrollable-table">
+                <table class="htmlpage-row">
+                  <thead>
+                    <tr>
+                      <td class="htmlpage-ceil c13722"></td>
+                      <td class="htmlpage-ceil c13722">Style prompt text</td>
+                      <td class="htmlpage-ceil c13722">Style reference audio</td>
+                      <td class="htmlpage-ceil c13722">Sample 1</td>
+                      <td class="htmlpage-ceil c13722">Sample 2</td>
+                      <td class="htmlpage-ceil c13722">Sample 3</td>
+                      <td class="htmlpage-ceil c13722">Sample 4</td>
+                      <td class="htmlpage-ceil c13722">Sample 5</td>
+                      <td class="htmlpage-ceil c13722">Sample 6</td>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Control type</td>
+                      <td class="htmlpage-ceil c13722"></td>
+                      <td class="htmlpage-ceil c13722"></td>
+                      <td class="htmlpage-ceil c13722">Text + Audio</td>
+                      <td class="htmlpage-ceil c13722">Text</td>
+                      <td class="htmlpage-ceil c13722">Audio</td>
+                      <td class="htmlpage-ceil c13722">Text + Audio</td>
+                      <td class="htmlpage-ceil c13722">Text</td>
+                      <td class="htmlpage-ceil c13722">Audio</td>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Content Text</td>
+                      <td class="htmlpage-ceil c13722"></td>
+                      <td class="htmlpage-ceil c13722"></td>
+                      <td class="htmlpage-ceil c13722">Born once every one hundred years, dies in flames!</td>
+                      <td class="htmlpage-ceil c13722">Born once every one hundred years, dies in flames!</td>
+                      <td class="htmlpage-ceil c13722">Born once every one hundred years, dies in flames!</td>
+                      <td class="htmlpage-ceil c13722">"My name is Phoebe Pyncheon." said the girl, with a manner of some reserve.</td>
+                      <td class="htmlpage-ceil c13722">"My name is Phoebe Pyncheon." said the girl, with a manner of some reserve.</td>
+                      <td class="htmlpage-ceil c13722">"My name is Phoebe Pyncheon." said the girl, with a manner of some reserve.</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Neutral</td>
+                      <td class="htmlpage-ceil c13722">Synthesize a voice that feels neutral.</th>
+                      <td><audio controls><source src="audios_new3/tabel3_REF0.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_TA0.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_A0.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_T0.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_TA0.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_A0.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_T0.wav" type="audio/mpeg" /></audio></td>
+
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Angry</td>
+                      <td class="htmlpage-ceil c13722">Synthesize a voice that feels angry.</th>
+                      <td><audio controls><source src="audios_new3/tabel3_REF1.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_TA1.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_A1.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_T1.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_TA1.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_A1.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_T1.wav" type="audio/mpeg" /></audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Surprise</td>
+                      <td class="htmlpage-ceil c13722">Synthesize a voice that feels surprise.</th>
+                      <td><audio controls><source src="audios_new3/tabel3_REF2.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_TA2.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_A2.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_T2.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_TA2.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_A2.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_T2.wav" type="audio/mpeg" /></audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Sad</td>
+                      <td class="htmlpage-ceil c13722">Set the emotion tone to sad.</th>
+                      <td><audio controls><source src="audios_new3/tabel3_REF3.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_TA3.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_A3.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_T3.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_TA3.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_A3.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_T3.wav" type="audio/mpeg" /></audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Happy</td>
+                      <td class="htmlpage-ceil c13722">Set the emotion tone to happy.</th>
+                      <td><audio controls><source src="audios_new3/tabel3_REF4.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_TA4.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_A4.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_T4.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_TA4.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_A4.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_T4.wav" type="audio/mpeg" /></audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Sleepy</td>
+                      <td class="htmlpage-ceil c13722">Set the emotion tone to sleepy.</th>
+                      <td><audio controls><source src="audios_new3/tabel3_REF5.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_TA5.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_A5.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_T5.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_TA5.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_A5.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_T5.wav" type="audio/mpeg" /></audio></td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="htmlpage-ceil c13722">Disgust</td>
+                      <td class="htmlpage-ceil c13722">Set the emotion tone to disgust.</th>
+                      <td><audio controls><source src="audios_new3/tabel3_REF6.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_TA6.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_A6.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/0_T6.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_TA6.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_A6.wav" type="audio/mpeg" /></audio></td>
+                      <td><audio controls><source src="audios_new3/1_T6.wav" type="audio/mpeg" /></audio></td>
+                    </tr>
+                  </tbody>
+                </table>
+                
+              </div>
+              <!-- Table3 End -->
+
+
+
+
+
+
+
             </div>
             <div class="htmlpage-cell">
             </div>
